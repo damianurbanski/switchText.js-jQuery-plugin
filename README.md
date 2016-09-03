@@ -30,7 +30,7 @@ $('.yourElement').switchText(['Something','happen','with that'],
 $('.yourelement').switchText(['Something','happen','with that'], // Words to switch
 250, // Time between switching (default = 1s)
 1, // Loop (optional)
-1, // Remove animation after end (works only when loop isn't set)
+1, // Remove animation on end (works only when loop isn't set)
 'zoomIn', //Name of animation
 1 // Animation duration (if isn't set will be same as time between switching)
 );
