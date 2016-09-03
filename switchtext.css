@@ -1,0 +1,98 @@
+/*The MIT License (MIT)
+// switchText.css | Copyright (c) 2016 Damian Urbanski */
+.zoomIn{-webkit-animation:stzoomIn ease infinite;animation:stzoomIn ease infinite;}
+.fadeIn{-webkit-animation:stfadeIn ease infinite;animation:stfadeIn ease infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
+.glitch{-webkit-animation:stglitch linear infinite;animation:stglitch steps(2) infinite;}
+.rotateY{-webkit-animation:strotateY linear infinite;animation:strotateY linear infinite;}
+.rotateX{-webkit-animation:strotateX linear infinite;animation:strotateX linear infinite;}
+.bounce{-webkit-animation:stbounce linear infinite;animation:stbounce linear infinite;}
+
+
+@-webkit-keyframes stfadeIn{
+from{color:transparent;}
+to{}
+}
+
+
+@keyframes stfadeIn{
+from{color:transparent;}
+to{}
+}
+
+@-webkit-keyframes stzoomIn{
+  0%{-webkit-transform:scale(0,0);transform:scale(0,0);opacity:0;}
+  100%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity: 1;}
+}
+
+@keyframes stzoomIn{
+  0%{-webkit-transform:scale(0,0);transform:scale(0,0);opacity:0;}
+  100%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity: 1;}
+}
+
+@-webkit-keyframes strotateY{
+  0%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg);}
+  50%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}
+  100%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg);}  
+}
+
+@keyframes strotateY{
+  0%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg);}
+  50%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}
+  100%{-webkit-transform:rotateY(90deg);transform:rotateY(90deg);}  
+}
+
+@-webkit-keyframes strotateX{
+  0%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg);}
+  50%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}
+  100%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}  
+}
+
+@keyframes strotateX{
+  0%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg);}
+  50%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg)}
+  100%{-webkit-transform:rotateX(90deg);transform:rotateX(90deg)}  
+}
+
+@-webkit-keyframes stglitch{
+3%{text-shadow:7px 7px 0px red;}
+6%{text-shadow:-9px 4px 0px blue;-webkit-transform:translate(4px,-10px) skewX(40deg);transform:translate(4px,-10px) skewX(40deg);}
+7%{text-shadow:3px -4px 0px green;}
+9%{text-shadow:0px 0px 0px transparent;-webkit-transform:translate(0px,0px) skewX(-20deg);transform:translate(0px,0px) skewX(-20deg);}
+13%{-webkit-transform:translate(0px,0px) skewX(0deg);transform:translate(0px,0px) skewX(0deg);}
+16%{-webkit-transform:translate(0px,0px) skew(0deg,0deg);transform:translate(0px,0px) skew(0deg,0deg);}
+2% , 54%{-webkit-transform:translateX(0px) skew(0deg);transform:translateX(0px) skew(0deg);}
+54%{text-shadow:0px 0px 0px transparent;}
+55%{text-shadow:-5px -4px 0px blue;-webkit-transform:translate(-2px,6px) skew(-5530deg);transform:translate(-2px,6px) skew(-5530deg);}
+56%{text-shadow:0px 0px 3px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+57%{text-shadow:7px 7px 0px red;-webkit-transform:translate(4px,-10px) skew(-70deg);transform:translate(4px,-10px) skew(-70deg);}
+58%{text-shadow:0px 0px 3px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+62%{text-shadow:6px -4px 0px red;-webkit-transform:translate(0px,-100px) skew(222deg) scale(5,5);transform:translate(0px,-100px) skew(222deg) scale(5,5);-webkit-filter:blur(2px);}
+63%{-webkit-transform:translate(4px,-2px) scale(1,1) skew(0deg);transform:translate(4px,-2px) scale(1,1) skew(0deg);-webkit-filter:blur(0px);}
+64%{-webkit-transform:translate(1px,3px) skew(-230deg);transform:translate(1px,3px) skew(-230deg);}
+65%{-webkit-transform:translate(-7px,2px) skew(120deg);transform:translate(-7px,2px) skew(120deg);}
+66%{text-shadow:3px 1px 3px green;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+68%{text-shadow:3px 1px 3px blue;-webkit-transform:translate(-20px,40px) skew(2deg);transform:translate(-20px,40px) skew(2deg);}
+70%{text-shadow:0px 0px 0px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+}
+
+@keyframes stglitch{
+3%{text-shadow:7px 7px 0px red;}
+6%{text-shadow:-9px 4px 0px blue;-webkit-transform:translate(4px,-10px) skewX(40deg);transform:translate(4px,-10px) skewX(40deg);}
+7%{text-shadow:3px -4px 0px green;}
+9%{text-shadow:0px 0px 0px transparent;-webkit-transform:translate(0px,0px) skewX(-20deg);transform:translate(0px,0px) skewX(-20deg);}
+13%{-webkit-transform:translate(0px,0px) skewX(0deg);transform:translate(0px,0px) skewX(0deg);}
+16%{-webkit-transform:translate(0px,0px) skew(0deg,0deg);transform:translate(0px,0px) skew(0deg,0deg);}
+2% , 54%{-webkit-transform:translateX(0px) skew(0deg);transform:translateX(0px) skew(0deg);}
+54%{text-shadow:0px 0px 0px transparent;}
+55%{text-shadow:-5px -4px 0px blue;-webkit-transform:translate(-2px,6px) skew(-5530deg);transform:translate(-2px,6px) skew(-5530deg);}
+56%{text-shadow:0px 0px 3px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+57%{text-shadow:7px 7px 0px red;-webkit-transform:translate(4px,-10px) skew(-70deg);transform:translate(4px,-10px) skew(-70deg);}
+58%{text-shadow:0px 0px 3px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+62%{text-shadow:6px -4px 0px red;-webkit-transform:translate(0px,-100px) skew(222deg) scale(5,5);transform:translate(0px,-100px) skew(222deg) scale(5,5);-webkit-filter:blur(2px);}
+63%{-webkit-transform:translate(4px,-2px) scale(1,1) skew(0deg);transform:translate(4px,-2px) scale(1,1) skew(0deg);-webkit-filter:blur(0px);}
+64%{-webkit-transform:translate(1px,3px) skew(-230deg);transform:translate(1px,3px) skew(-230deg);}
+65%{-webkit-transform:translate(-7px,2px) skew(120deg);transform:translate(-7px,2px) skew(120deg);}
+66%{text-shadow:3px 1px 3px green;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+68%{text-shadow:3px 1px 3px blue;-webkit-transform:translate(-20px,40px) skew(2deg);transform:translate(-20px,40px) skew(2deg);}
+70%{text-shadow:0px 0px 0px transparent;-webkit-transform:translate(0px,0px) skew(0deg);transform:translate(0px,0px) skew(0deg);}
+}
