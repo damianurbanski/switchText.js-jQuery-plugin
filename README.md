@@ -25,7 +25,7 @@ $('.yourElement').switchText(['Something','happen','with that'],
 
 ##
 
-### Settings
+## Settings
 ```javascript
 $('.yourelement').switchText(['Something','happen','with that'], // Words to switch
 250, // Time between switching (default = 1s)
@@ -35,3 +35,10 @@ $('.yourelement').switchText(['Something','happen','with that'], // Words to swi
 1 // Animation duration (if isn't set will be same as time between switching)
 );
 ```
+### Animation types
+- zoomIn
+- fadeIn
+- glitch
+- rotateY
+- rotateX
+- bounce
